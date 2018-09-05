@@ -17,8 +17,6 @@ ActiveRecord::Schema.define(version: 2018_09_05_233326) do
     t.integer "follower_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["follower_id"], name: "index_subscriptions_on_follower_id"
-    t.index ["leader_id"], name: "index_subscriptions_on_leader_id"
   end
 
   create_table "users", force: :cascade do |t|
